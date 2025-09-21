@@ -4,17 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Restaurante Sindamanoy · Sabores Ancestrales</title>
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
 <style>
-:root{
-  --bg:#f7f2e9; --ink:#2f2a23; --accent:#8b5e34; --ink-soft:#544a3a;
-}
+:root{ --bg:#f7f2e9; --ink:#2f2a23; --accent:#8b5e34; --ink-soft:#544a3a; }
 *{box-sizing:border-box}
-body{margin:0;font-family: 'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
-header{padding:28px 16px;text-align:center;background:linear-gradient(180deg,#efe4cf, #f7f2e9);border-bottom:1px solid #e3d7c4}
-.hero{max-width:1100px;margin:0 auto;display:grid;grid-template-columns: 140px 1fr;gap:18px;align-items:center}
+body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{padding:28px 16px;text-align:center;background:linear-gradient(180deg,#efe4cf,#f7f2e9);border-bottom:1px solid #e3d7c4}
+.hero{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center}
 .hero img{width:140px;height:140px;border-radius:16px;object-fit:cover;border:2px solid #d4c4aa;background:#efe4cf}
-h1{margin:0;font-size:clamp(24px,3.6vw,40px);letter-spacing:0.5px}
+h1{margin:0;font-size:clamp(24px,3.6vw,40px);letter-spacing:.5px}
 h2{font-size:clamp(18px,2.4vw,24px);margin:24px 0 10px;color:var(--accent)}
 .container{max-width:1100px;margin:0 auto;padding:24px 16px}
 .card{background:#fff;border:1px solid #eadfcd;border-radius:16px;padding:18px;box-shadow:0 8px 16px rgba(0,0,0,.04)}
@@ -31,13 +29,14 @@ h2{font-size:clamp(18px,2.4vw,24px);margin:24px 0 10px;color:var(--accent)}
 .badge{padding:8px 12px;border:1px solid #d8c9b2;border-radius:12px;color:var(--ink-soft);background:#fff}
 footer{padding:24px 16px;border-top:1px solid #e3d7c4;color:var(--ink-soft);text-align:center}
 small{color:#7a6c57}
-@media (max-width:700px){.hero{grid-template-columns:1fr;text-align:center}.hero img{margin:0 auto} .menu{grid-template-columns:1fr}}
+@media (max-width:700px){.hero{grid-template-columns:1fr;text-align:center}.hero img{margin:0 auto}.menu{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
   <div class="hero">
-    <img src="assets/logo-card.jpg" alt="Logo Restaurante Sindamanoy">
+    <!-- Si subes tu logo como 'logo-card.jpg', cambia el src a 'logo-card.jpg' -->
+    <img src="cuyes-900.jpg" alt="Logo/imagen destacada Restaurante Sindamanoy">
     <div>
       <h1>Restaurante Sindamanoy</h1>
       <p><strong>Sabores ancestrales</strong> de Nariño: hornado, fritada, cuy, llapingachos y postres de tradición.</p>
@@ -71,37 +70,4 @@ small{color:#7a6c57}
     <div class="card">
       <h2>Postres</h2>
       <ul>
-        <li>Helado de paila artesanal</li>
-        <li>Dulces típicos de la casa</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h2>Bebidas</h2>
-      <ul>
-        <li>Champús de lulo</li>
-        <li>Aguapanela con queso</li>
-        <li>Bebidas naturales</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Galería</h2>
-    <div class="grid">
-      <figure class="figure"><picture><source srcset="assets/mixto-900.webp" type="image/webp"><img src="assets/mixto-900.jpg" alt="Mixto especial Sindamanoy"></picture><figcaption class="caption">Mixto especial Sindamanoy</figcaption></figure><figure class="figure"><picture><source srcset="assets/fritada-900.webp" type="image/webp"><img src="assets/fritada-900.jpg" alt="Fritada con llapingachos"></picture><figcaption class="caption">Fritada con llapingachos</figcaption></figure><figure class="figure"><picture><source srcset="assets/hornado-900.webp" type="image/webp"><img src="assets/hornado-900.jpg" alt="Hornado de horno de leña"></picture><figcaption class="caption">Hornado de horno de leña</figcaption></figure><figure class="figure"><picture><source srcset="assets/cuyes-900.webp" type="image/webp"><img src="assets/cuyes-900.jpg" alt="Cuy asado tradicional"></picture><figcaption class="caption">Cuy asado tradicional</figcaption></figure><figure class="figure"><picture><source srcset="assets/llapingachos-900.webp" type="image/webp"><img src="assets/llapingachos-900.jpg" alt="Llapingachos dorados"></picture><figcaption class="caption">Llapingachos dorados</figcaption></figure><figure class="figure"><picture><source srcset="assets/empanada-900.webp" type="image/webp"><img src="assets/empanada-900.jpg" alt="Empanada dulce nariñense"></picture><figcaption class="caption">Empanada dulce nariñense</figcaption></figure><figure class="figure"><picture><source srcset="assets/helado-900.webp" type="image/webp"><img src="assets/helado-900.jpg" alt="Helado de paila artesanal"></picture><figcaption class="caption">Helado de paila artesanal</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="contacto" class="card" style="margin-top:16px">
-    <h2>Contacto</h2>
-    <p><strong>Pedidos y reservas:</strong> <a href="tel:+573000000000">+57 300 000 0000</a> · <a href="https://wa.me/573000000000">WhatsApp</a></p>
-    <p><strong>Dirección:</strong> (Actualiza tu dirección aquí)</p>
-    <p><small>Horario sugerido: Mi–Dom 11:30–19:00 · L–M cerrado</small></p>
-  </section>
-</main>
-
-<footer>
-  <small>© 2025 Restaurante Sindamanoy · Cocina de tradición andina</small>
-</footer>
-</body>
-</html>
+        <li>Helado d
